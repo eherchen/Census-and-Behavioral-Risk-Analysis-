@@ -87,7 +87,7 @@ function updateToolTip(chosenXAxis, circlesGroup) {
     .attr("class", "tooltip")
     .offset([80, -60])
     .html(function(d) {
-  return (`${d.abbr}<br>${label} ${d[chosenXAxis]}`);
+  return (`${d.state}<br>${label} ${d[chosenXAxis]}`);
 });
 
   circlesGroup.call(toolTip);
@@ -152,17 +152,19 @@ d3.csv("hdata.csv", function(err, hdata) {
     .attr("opacity", "5");
 
       // append state abbr into circles
-  var circlesGroupText = chartGroup.selectAll("text")
+  var circlesGroupText = chartGroup.selectAll("null")
     .data(hdata)
     .enter()
     .append("text")
-    .text((d) => d.abbr)
+    .text(hdata => hdata.abbr)
     .attr("x", d => xLinearScale(d[chosenXAxis]-.18))
     .attr("y", d => yLinearScale(d.healthcareLow-.18))
     .attr("font-size", ".5em")
     // .attr("r", 10)
     .attr("fill", "white")
     // .attr("opacity", "5");
+
+  
 
   // Create group for  2 x- axis labels
   var labelsGroup = chartGroup.append("g")
