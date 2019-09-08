@@ -1,5 +1,5 @@
 # Homework-13-Submission
-D3 Homework
+Interactive D3 Assignment using information from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System.
 
 You need to create a scatter plot between two of the data variables such as Healthcare vs. Poverty or Smokers vs. Age.
 
