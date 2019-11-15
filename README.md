@@ -4,5 +4,5 @@ Visualizations include: Interactive D3 Scatter Plot of paired data variables Hea
 
 Tools Used: D3, app.js, csv
 
-![Alt Text] (https://github.com/eherchen/Census-and-Behavioral-Risk-Analysis-/blob/master/Healthcare%20vs%20Poverty.png)
+![Alt Text](https://github.com/eherchen/Census-and-Behavioral-Risk-Analysis-/blob/master/Healthcare%20vs%20Poverty.png)
 
